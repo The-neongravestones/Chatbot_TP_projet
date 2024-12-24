@@ -50,7 +50,7 @@ Voici la structure du projet et une brève description de chaque fichier/dossier
 
 ### Prérequis
 
-- **Docker** et **Docker Compose** installés sur votre machine.
+- **Docker**  .
 
 ### Étapes d'Installation
 
