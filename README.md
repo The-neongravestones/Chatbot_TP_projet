@@ -61,16 +61,13 @@ Voici la structure du projet et une brève description de chaque fichier/dossier
    ```bash
    git clone https://github.com/The-neongravestones/Chatbot_TP_project.git
    cd Chatbot_TP_project
-Configurer les Dépendances
+2. **Configurer les Dépendances**
 
 Les dépendances Python sont gérées automatiquement avec Docker. Le fichier requirements.txt est inclus et sera utilisé pour installer toutes les bibliothèques nécessaires à l'exécution du chatbot.
 
-Démarrer le Chatbot avec Docker Compose
+3. **Démarrer le Chatbot avec Docker Compose**
 
 Lancez les services avec la commande suivante :
-
-```bash
- docker-compose up --build
 
 
 Cela construira les images Docker et lancera les services nécessaires à l'exécution du chatbot.
