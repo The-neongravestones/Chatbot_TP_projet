@@ -33,15 +33,15 @@ Pour utiliser le Chatbot TP, il faut installer les éléments suivants :
 - **Rasa** : framework utilisé pour la gestion des dialogues.  
 
 **Étapes d'installation**
-1. ** Cloner le dépôt GitHub** :  
-   ** git clone https://github.com/The-neongravestones/Chatbot_TP_projet.git**
-2. ** Naviguer dans le dossier du projet** :
-  ** cd Chatbot_TP_projet**
+1. **Cloner le dépôt GitHub** :  
+   **git clone https://github.com/The-neongravestones/Chatbot_TP_projet.git**
+2. **Naviguer dans le dossier du projet** :
+  **cd Chatbot_TP_projet**
 3. **Construire l'image Docker** :
-    ** docker-compose up --build.**
+    **docker-compose up --build.**
 4. **Lancer le conteneur Docker** :
-    ** docker run -p 5005:5005 chatbot_tp **
-5. ** Accéder au chatbot** : ouvrir navigateur et se rendre à l'adresse suivante :
+    **docker run -p 5005:5005 chatbot_tp **
+5. **Accéder au chatbot** : ouvrir navigateur et se rendre à l'adresse suivante :
 http://localhost:5005.
 
 
@@ -81,5 +81,5 @@ Nous pouvons adapter le Chatbot TP à nos besoins spécifiques en modifiant les 
 **Entraîner le chatbot**
 Après avoir apporté des modifications, exécuter cette commande pour réentraîner le modèle :  
 
- ** rasa train **
+ **rasa train **
 
