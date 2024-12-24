@@ -15,10 +15,10 @@ Le **Chatbot TP** est un assistant virtuel conçu pour aider les étudiants de l
 - Mécanique vibratoire  
 - Turbomachinerie  
 
-### Objectif principal
+## Objectif principal
 Améliorer l'efficacité des sessions de TP en mettant à disposition un outil intelligent, personnalisé et facile à utiliser.
 
-### Fonctionnalités principales
+## Fonctionnalités principales
 - **Intégration de Rasa** pour la gestion avancée des dialogues.  
 - **Modèle LLM Mistral** et **RAG** (Retrieval-Augmented Generation) pour des réponses contextuelles.  
 - **Déploiement avec Docker** pour une installation simple et portable.  
@@ -26,13 +26,13 @@ Améliorer l'efficacité des sessions de TP en mettant à disposition un outil i
 
 Installation
 ============
-### Pré-requis
+## Pré-requis
 Pour utiliser le Chatbot TP, assurez-vous d'avoir installé les éléments suivants sur votre machine :  
 - **Docker** : pour le déploiement.  
 - **Python** (version 3.8 ou ultérieure).  
 - **Rasa** : framework utilisé pour la gestion des dialogues.  
 
-### Étapes d'installation
+## Étapes d'installation
 1. **Cloner le dépôt GitHub** :  
    ```bash
    git clone https://github.com/The-neongravestones/Chatbot_TP_projet.git
