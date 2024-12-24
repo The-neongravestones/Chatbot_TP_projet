@@ -87,11 +87,15 @@ Personnalisation
 ================
 
 Nous pouvons adapter le Chatbot TP à nos besoins spécifiques en modifiant les fichiers suivants :  
+
 - **domain.yml** : ajouter ou supprimer des intentions ou actions.  
+
 - **nlu.yml** : entraîner le chatbot avec de nouvelles phrases d'exemple.  
+
 - **stories.yml** : créer des scénarios pour guider le chatbot dans des conversations spécifiques.  
 
 **Entraîner le chatbot**
+
 Après avoir apporté des modifications, exécuter cette commande pour réentraîner le modèle :  
 
  rasa train
