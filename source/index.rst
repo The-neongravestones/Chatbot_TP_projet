@@ -1,7 +1,7 @@
 Bienvenue dans le projet Chatbot TP
 ==================================
 
-.. image:: im.JPG
+.. image:: im.jpg
    :width: 100%
   
 
