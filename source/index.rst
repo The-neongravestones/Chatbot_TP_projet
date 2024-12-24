@@ -28,6 +28,7 @@ Installation
 ============
 **Pré-requis**
 Pour utiliser le Chatbot TP, il faut installer les éléments suivants :  
+
 - **Docker** : pour le déploiement.  
 - **Python** (version 3.8 ou ultérieure).  
 - **Rasa** : framework utilisé pour la gestion des dialogues.  
@@ -40,7 +41,7 @@ Pour utiliser le Chatbot TP, il faut installer les éléments suivants :
 3. **Construire l'image Docker** :
     **docker-compose up --build.**
 4. **Lancer le conteneur Docker** :
-    **docker run -p 5005:5005 chatbot_tp **
+    **docker run -p 5005:5005 chatbot_tp**
 5. **Accéder au chatbot** : ouvrir navigateur et se rendre à l'adresse suivante :
 http://localhost:5005.
 
@@ -81,5 +82,5 @@ Nous pouvons adapter le Chatbot TP à nos besoins spécifiques en modifiant les 
 **Entraîner le chatbot**
 Après avoir apporté des modifications, exécuter cette commande pour réentraîner le modèle :  
 
- **rasa train **
+ **rasa train**
 
