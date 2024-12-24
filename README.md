@@ -69,7 +69,9 @@ Démarrer le Chatbot avec Docker Compose
 
 Lancez les services avec la commande suivante :
 
-```lang docker-compose up --build
+```bash
+ docker-compose up --build
+
 
 Cela construira les images Docker et lancera les services nécessaires à l'exécution du chatbot.
 
