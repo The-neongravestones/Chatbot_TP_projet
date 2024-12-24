@@ -68,9 +68,10 @@ Les dépendances Python sont gérées automatiquement avec Docker. Le fichier re
 3. **Démarrer le Chatbot avec Docker Compose**
 
 Lancez les services avec la commande suivante :
+```lang
+ docker-compose up --build
 
-
-Cela construira les images Docker et lancera les services nécessaires à l'exécution du chatbot.
+**Cela construira les images Docker et lancera les services nécessaires à l'exécution du chatbot.**
 
 Accéder au Chatbot
 
