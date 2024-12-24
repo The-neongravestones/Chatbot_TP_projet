@@ -3,7 +3,7 @@ Bienvenue dans le projet Chatbot TP
 
 .. image:: im.JPG
    :width: 100%
-   :alt: Bannière du projet Chatbot TP
+  
 
 Introduction
 ============
@@ -47,7 +47,10 @@ Pour utiliser le Chatbot TP, assurez-vous d'avoir installé les éléments suiva
     docker run -p 5005:5005 chatbot_tp
 5. **Accéder au chatbot** : ouvrez votre navigateur et rendez-vous à l'adresse suivante :
 http://localhost:5005.
-# Utilisation
+
+
+Utilisation
+============
 
 ## Démarrer le chatbot
 Après avoir installé et lancé le conteneur Docker, vous pouvez interagir avec le chatbot via une interface Web ou un terminal.
@@ -58,7 +61,8 @@ Après avoir installé et lancé le conteneur Docker, vous pouvez interagir avec
 
 ---
 
-# Architecture
+Architecture
+============
 
 Le projet est structuré autour des éléments suivants :
 
@@ -70,12 +74,13 @@ Le projet est structuré autour des éléments suivants :
 
 ---
 
-# Personnalisation
+Personnalisation
+================
 
-Vous pouvez adapter le Chatbot TP à vos besoins spécifiques en modifiant les fichiers suivants :  
-- **domain.yml** : ajoutez ou supprimez des intentions ou actions.  
-- **nlu.yml** : entraînez le chatbot avec de nouvelles phrases d'exemple.  
-- **stories.yml** : créez des scénarios pour guider le chatbot dans des conversations spécifiques.  
+Nous pouvez adapter le Chatbot TP à nos besoins spécifiques en modifiant les fichiers suivants :  
+- **domain.yml** : ajouter ou supprimer des intentions ou actions.  
+- **nlu.yml** : entraîner le chatbot avec de nouvelles phrases d'exemple.  
+- **stories.yml** : créer des scénarios pour guider le chatbot dans des conversations spécifiques.  
 
 ## Entraîner le chatbot
 Après avoir apporté des modifications, exécutez cette commande pour réentraîner le modèle :  
