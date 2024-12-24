@@ -1,0 +1,10 @@
+# Fichier .readthedocs.yaml
+version: 2
+
+sphinx:
+  configuration: source/conf.py  # Chemin vers ton fichier conf.py
+
+python:
+  version: "3.8"  # Choisis la version Python utilisée pour le build
+  install:
+    - requirements: source/requirements.txt  # Fichier contenant les dépendances
