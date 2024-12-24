@@ -1,71 +1,84 @@
-Welcome to Chatbot TP Project
-=============================
+Bienvenue dans le projet Chatbot TP
+==================================
 
-.. toctree::
-   :maxdepth: 2
-   :caption: Table of Contents
-
-   installation
-   usage
-   architecture
-   customization
-   contribution
-   faq
-   credits
+.. image:: im.JPG
+   :width: 100%
+   :alt: Bannière du projet Chatbot TP
 
 Introduction
 ============
+Le **Chatbot TP** est un assistant virtuel conçu pour aider les étudiants de l'**ENSAM** dans leurs travaux pratiques (TP). Il est capable de fournir des réponses rapides et précises sur des modules tels que :
 
-Le **Chatbot TP** est un projet développé pour faciliter les travaux pratiques (TP) des étudiants à l'ENSAM. 
-Ce chatbot est conçu pour fournir des réponses rapides et précises concernant les modules de TP tels que 
-la gestion de production, les systèmes de production, l'informatique industrielle, la mécanique vibratoire, 
-et la turbomachinerie.
+- Gestion de production  
+- Systèmes de production  
+- Informatique industrielle  
+- Mécanique vibratoire  
+- Turbomachinerie  
 
-L'objectif principal est d'améliorer l'efficacité des sessions de TP en offrant un assistant intelligent 
-personnalisé et facile à utiliser.
+### Objectif principal
+Améliorer l'efficacité des sessions de TP en mettant à disposition un outil intelligent, personnalisé et facile à utiliser.
 
-Caractéristiques principales :
-- Intégration avec **Rasa** pour la gestion des dialogues.
-- Déploiement via **Docker** pour assurer la portabilité.
-- Modèle LLM **Mistral** et **RAG** (Retrieval-Augmented Generation) pour des réponses contextuellement plus précises.
-- Fichiers de configuration comme **stories**, **domain**, **rules**, et **NLU** pour une personnalisation avancée.
+### Fonctionnalités principales
+- **Intégration de Rasa** pour la gestion avancée des dialogues.  
+- **Modèle LLM Mistral** et **RAG** (Retrieval-Augmented Generation) pour des réponses contextuelles.  
+- **Déploiement avec Docker** pour une installation simple et portable.  
+- Personnalisation complète grâce aux fichiers **stories**, **domain**, **rules**, et **nlu**.  
 
 Installation
 ============
+### Pré-requis
+Pour utiliser le Chatbot TP, assurez-vous d'avoir installé les éléments suivants sur votre machine :  
+- **Docker** : pour le déploiement.  
+- **Python** (version 3.8 ou ultérieure).  
+- **Rasa** : framework utilisé pour la gestion des dialogues.  
 
-Pour installer ce projet, consultez la page dédiée : :doc:`installation`.
+### Étapes d'installation
+1. **Cloner le dépôt GitHub** :  
+   ```bash
+   git clone https://github.com/The-neongravestones/Chatbot_TP_projet.git
+2. **Naviguer dans le dossier du projet** :
+    ```bash
+   cd Chatbot_TP_projet
+3. **Construire l'image Docker** :
+    ```bash
+    docker build -t chatbot_tp .
+4. **Lancer le conteneur Docker** :
+    ```bash
+    docker run -p 5005:5005 chatbot_tp
+5. **Accéder au chatbot** : ouvrez votre navigateur et rendez-vous à l'adresse suivante :
+http://localhost:5005.
+# Utilisation
 
-Utilisation
-===========
+## Démarrer le chatbot
+Après avoir installé et lancé le conteneur Docker, vous pouvez interagir avec le chatbot via une interface Web ou un terminal.
 
-Pour apprendre à utiliser le chatbot, visitez : :doc:`usage`.
-
-Architecture
-============
-
-Découvrez les composants du projet et leur interaction dans : :doc:`architecture`.
-
-Personnalisation
-================
-
-Vous souhaitez adapter le chatbot à vos besoins spécifiques ? Consultez : :doc:`customization`.
-
-Contribution
-============
-
-Apprenez comment contribuer au développement du projet : :doc:`contribution`.
-
-FAQ
-===
-
-Retrouvez les réponses aux questions fréquentes : :doc:`faq`.
-
-Crédits
-=======
-
-Découvrez les auteurs et les remerciements du projet : :doc:`credits`.
+## Commandes principales
+- **Poser une question** : Entrez une question liée à vos travaux pratiques, et le chatbot vous répondra.  
+- **Réinitialiser la conversation** : Tapez `reset` pour recommencer la session.  
 
 ---
 
-Pour plus de détails, visitez notre repository GitHub : 
-`Chatbot TP Projet <https://github.com/The-neongravestones/Chatbot_TP_projet>`_
+# Architecture
+
+Le projet est structuré autour des éléments suivants :
+
+- **Rasa** : pour gérer les intentions, les réponses et le flux des conversations.  
+- **Domain.yml** : contient les actions, intentions et réponses prédéfinies.  
+- **NLU.yml** : configure les données d'entraînement des intentions.  
+- **Stories.yml** : décrit les scénarios de conversation.  
+- **Actions** : permet de définir des réponses personnalisées ou de récupérer des données dynamiques.  
+
+---
+
+# Personnalisation
+
+Vous pouvez adapter le Chatbot TP à vos besoins spécifiques en modifiant les fichiers suivants :  
+- **domain.yml** : ajoutez ou supprimez des intentions ou actions.  
+- **nlu.yml** : entraînez le chatbot avec de nouvelles phrases d'exemple.  
+- **stories.yml** : créez des scénarios pour guider le chatbot dans des conversations spécifiques.  
+
+## Entraîner le chatbot
+Après avoir apporté des modifications, exécutez cette commande pour réentraîner le modèle :  
+```bash
+rasa train
+
