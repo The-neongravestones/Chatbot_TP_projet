@@ -1,6 +1,12 @@
 rasa==3.0.0
 numpy
-pandas
-langchain
+streamlit
 PyPDF2
-Chroma
+pdfplumber
+langchain
+langchain-community
+langchain-core
+langchain-openai
+chromadb
+ollama-python
+tiktoken
