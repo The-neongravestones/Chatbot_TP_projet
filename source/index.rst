@@ -2,7 +2,7 @@ Bienvenue dans le projet Chatbot TP
 ==================================
 
 .. image:: im.jpg
-   :width: 100%
+   :width: 80%
   
 
 Introduction
@@ -34,7 +34,7 @@ Pour utiliser le Chatbot TP, assurez-vous d'avoir installé les éléments suiva
 
 ## Étapes d'installation
 1. **Cloner le dépôt GitHub** :  
-   ```bash
+   ```plant
    git clone https://github.com/The-neongravestones/Chatbot_TP_projet.git
 2. **Naviguer dans le dossier du projet** :
     ```bash
