@@ -1,0 +1,32 @@
+version: "3.0"
+
+rules:
+- rule: Greet user
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- rule: Provide TP schedule
+  steps:
+  - intent: ask_tp_schedule
+  - action: utter_ask_tp_schedule
+
+- rule: Provide TP details
+  steps:
+  - intent: ask_tp_details
+  - action: utter_ask_tp_details
+
+- rule: Provide TP materials
+  steps:
+  - intent: ask_tp_materials
+  - action: utter_ask_tp_materials
+
+- rule: Provide TP procedure
+  steps:
+  - intent: ask_tp_procedure
+  - action: utter_ask_tp_procedure
+
+- rule: Goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye

@@ -1,0 +1,29 @@
+version: "3.0"
+
+stories:
+- story: Greeting and asking about TP
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_tp_schedule
+  - action: utter_ask_tp_schedule
+
+- story: Asking for details of a TP
+  steps:
+  - intent: ask_tp_details
+  - action: utter_ask_tp_details
+
+- story: Asking about materials for a TP
+  steps:
+  - intent: ask_tp_materials
+  - action: utter_ask_tp_materials
+
+- story: Asking about procedure of a TP
+  steps:
+  - intent: ask_tp_procedure
+  - action: utter_ask_tp_procedure
+
+- story: Saying goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye

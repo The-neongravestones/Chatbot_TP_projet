@@ -1,0 +1,6 @@
+rasa==3.0.0
+numpy
+pandas
+langchain
+PyPDF2
+Chroma

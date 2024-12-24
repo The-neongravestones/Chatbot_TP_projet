@@ -1,0 +1,44 @@
+version: "3.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - Bonjour
+    - Salut
+    - Coucou
+
+- intent: ask_tp_schedule
+  examples: |
+    - Quand a lieu le TP sur la mécanique vibratoire ?
+    - Quelle est l'heure du TP sur la gestion de production ?
+    - Le planning pour le TP en systèmes de production ?
+
+- intent: ask_tp_details
+  examples: |
+    - Qu'est-ce qu'on fait dans le TP mécanique vibratoire ?
+    - Quels sont les sujets abordés dans le TP d'informatique industrielle ?
+    - Donne-moi plus d'informations sur le TP turbomachine.
+
+- intent: ask_tp_materials
+  examples: |
+    - De quoi ai-je besoin pour le TP en mécanique vibratoire ?
+    - Quels outils sont nécessaires pour le TP systèmes de production ?
+    - Liste des matériaux pour le TP gestion de production.
+
+- intent: ask_tp_procedure
+  examples: |
+    - Quelles sont les étapes pour le TP informatique industrielle ?
+    - Décris la procédure pour le TP turbomachine.
+    - Comment exécuter les travaux pratiques ?
+
+- intent: ask_tp_criteria
+  examples: |
+    - Quels sont les critères de notation pour le TP mécanique vibratoire ?
+    - Comment ce TP est-il évalué ?
+    - Que dois-je inclure pour obtenir une bonne note dans le TP systèmes de production ?
+
+- intent: goodbye
+  examples: |
+    - Merci, au revoir.
+    - À la prochaine !
+    - C'est tout pour le moment.

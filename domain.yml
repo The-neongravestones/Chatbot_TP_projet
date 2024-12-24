@@ -1,0 +1,44 @@
+version: "3.0"
+
+intents:
+  - greet
+  - ask_tp_schedule
+  - ask_tp_details
+  - ask_tp_materials
+  - ask_tp_procedure
+  - ask_tp_criteria
+  - goodbye
+
+entities:
+  - tp_name
+
+slots:
+  tp_name:
+    type: text
+    mappings:
+      - type: from_text
+
+responses:
+  utter_greet:
+    - text: "Bonjour ! Comment puis-je vous aider pour vos TP aujourd'hui ?"
+  utter_goodbye:
+    - text: "Au revoir ! Bonne chance pour vos TP."
+  utter_ask_tp_schedule:
+    - text: "Les séances de TP pour que vous demandez auront lieu à [insérer l'horaire]."
+  utter_ask_tp_details:
+    - text: "Ce TP  couvre principalement des sujets liés à [insérer le détail]."
+  utter_ask_tp_materials:
+    - text: "Pour ce TP , vous aurez besoin de : [matériaux nécessaires]."
+  utter_ask_tp_procedure:
+    - text: "Voici les étapes pour le TP {tp_name} : [procédure]."
+  utter_ask_tp_criteria:
+    - text: "Les critères d'évaluation pour {tp_name} sont : [critères]."
+  utter_fallback:
+    - text: "Je suis désolé, je n'ai pas compris. Pouvez-vous reformuler votre question ?"
+
+actions:
+  - action_provide_tp_info
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
