@@ -78,6 +78,8 @@ Le projet est structuré autour des éléments suivants :
 - **NLU.yml** : configure les données d'entraînement des intentions.  
 - **Stories.yml** : décrit les scénarios de conversation.  
 - **Actions** : permet de définir des réponses personnalisées ou de récupérer des données dynamiques.  
+- **LLM.py** : Ce fichier gère l'intégration du modèle de langage avec Rasa, permettant une interaction plus fluide et intelligente avec le chatbot.
+- **digest.py** : Ce fichier est responsable de la gestion des requêtes et de la récupération des informations pertinentes depuis les sources externes, comme une base de données ou d'autres APIs, en fonction des demandes de l'utilisateur.
 
 ---
 
