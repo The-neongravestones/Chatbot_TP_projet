@@ -37,6 +37,14 @@ nlu:
     - Comment ce TP est-il évalué ?
     - Que dois-je inclure pour obtenir une bonne note dans le TP systèmes de production ?
 
+- intent: ask_question
+  examples: |
+    - Quel est le but du premier TP de gestion de production?
+    - Combien de sessions contient le TP de gestion? 
+    - donne les étapes de chaque sesssions
+    - quel est le role de ce tp? 
+    - Quel outil on va utiliser pour le tp de gestion de production?
+    
 - intent: goodbye
   examples: |
     - Merci, au revoir.

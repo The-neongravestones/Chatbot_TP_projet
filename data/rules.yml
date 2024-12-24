@@ -26,6 +26,11 @@ rules:
   - intent: ask_tp_procedure
   - action: utter_ask_tp_procedure
 
+- rule: Retrieve answer from documents
+  steps:
+  - intent: ask_question
+  - action: action_retrieve_answer
+
 - rule: Goodbye
   steps:
   - intent: goodbye

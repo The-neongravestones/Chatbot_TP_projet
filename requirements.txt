@@ -1,12 +1,4 @@
-rasa==3.0.0
-numpy
-streamlit
-PyPDF2
-pdfplumber
-langchain
-langchain-community
-langchain-core
-langchain-openai
-chromadb
-ollama-python
-tiktoken
+rasa==3.4.0
+rasa-sdk==3.4.0
+chroma==0.2.0
+python-dotenv==0.20.0

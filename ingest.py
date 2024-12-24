@@ -1,6 +1,7 @@
 import os
 import pdfplumber
-from langchain_community.vectorstores import Chroma
+from LLM import read_pdf
+from langchain_chroma import Chroma
 from langchain.text_splitter import CharacterTextSplitter
 from langchain.schema import Document
 from langchain_community.embeddings.ollama import OllamaEmbeddings
@@ -25,7 +26,7 @@ def ingest_into_vector_store(documents):
         collection_name="rag-chroma",
     )
     db.add_documents(doc_splits)
-    db.persist()
+    #db.persist()
 
 
 def main():

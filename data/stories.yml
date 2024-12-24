@@ -7,7 +7,7 @@ stories:
   - action: utter_greet
   - intent: ask_tp_schedule
   - action: utter_ask_tp_schedule
-
+  
 - story: Asking for details of a TP
   steps:
   - intent: ask_tp_details
@@ -27,3 +27,8 @@ stories:
   steps:
   - intent: goodbye
   - action: utter_goodbye
+
+- story: retrieve answer from documents
+  steps:
+  - intent: ask_question
+  - action: action_retrieve_answer

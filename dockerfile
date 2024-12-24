@@ -1,15 +1,16 @@
-FROM rasa/rasa:3.0.0-full
+# Utiliser l'image de base de Rasa pour les actions
+FROM rasa/rasa-sdk:3.4.0
 
-# Installer des dépendances supplémentaires
-RUN apt-get update && apt-get install -y poppler-utils && \
-    pip install pdfplumber langchain langchain_community
 
-# Copier les actions dans le conteneur
-COPY actions /app/actions
+# Définir le répertoire de travail
 WORKDIR /app
 
-# Installer les actions
-RUN pip install -r /app/requirements.txt
+# Copier les fichiers nécessaires dans le conteneur
+COPY ./actions /app/actions
 
-# Démarrage des actions Rasa
+# Installer les dépendances Python
+COPY requirements.txt /app/requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Définir la commande d'exécution pour le serveur d'actions
 CMD ["rasa", "run", "actions"]
