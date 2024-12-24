@@ -19,14 +19,17 @@ Le **Chatbot TP** est un assistant virtuel conçu pour aider les étudiants de l
 Améliorer l'efficacité des sessions de TP en mettant à disposition un outil intelligent, personnalisé et facile à utiliser.
 
 **Fonctionnalités principales**
+
 - **Intégration de Rasa** pour la gestion avancée des dialogues.  
 - **Modèle LLM Mistral** et **RAG** (Retrieval-Augmented Generation) pour des réponses contextuelles.  
 - **Déploiement avec Docker** pour une installation simple et portable.  
-- Personnalisation complète grâce aux fichiers **stories**, **domain**, **rules**, et **nlu**.  
+- **Personnalisation** complète grâce aux fichiers **stories**, **domain**, **rules**, et **nlu**.  
 
 Installation
 ============
+
 **Pré-requis**
+
 Pour utiliser le Chatbot TP, il faut installer les éléments suivants :  
 
 - **Docker** : pour le déploiement.  
@@ -34,6 +37,7 @@ Pour utiliser le Chatbot TP, il faut installer les éléments suivants :
 - **Rasa** : framework utilisé pour la gestion des dialogues.  
 
 **Étapes d'installation**
+
 1. **Cloner le dépôt GitHub** :  
    **git clone https://github.com/The-neongravestones/Chatbot_TP_projet.git**
 2. **Naviguer dans le dossier du projet** :
